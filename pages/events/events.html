@@ -1,0 +1,44 @@
+<section id="ahead">
+   <h2>AHEAD</h2>
+       <hr>
+       <div class="row" ng-repeat='aheadRow in limitedAheadArray'>
+           <div class="col-sm-12 {{aheadRow[0].class}}">
+             <div class="thumbnail">
+               <img ng-src={{aheadRow[0].thumbnail}} alt="...">
+               <div class="caption">
+                 <h3>{{aheadRow[0].title}}</h3>
+                 <p>{{aheadRow[0].content}}</p>
+                 <div class="col-sm-2 col-centered">
+                 </div>
+               </div>
+             </div>
+           </div>
+       </div>
+
+        <div class="col-sm-2 col-centered">
+            <a class="btn btn-default center-block" role="button" ng-click = "addToAheadCounter()"><span class=" glyphicon glyphicon-chevron-down"></a>
+        </div>
+   </section>
+
+   <section id="behind">
+       <h2>BEHIND</h2>
+       <hr>
+       <div class="row" ng-repeat='behindRow in limitedBehindArray'>
+           <div class="col-sm-12 {{behindRow[0].class}}">
+             <div class="thumbnail">
+               <img ng-src={{behindRow[0].thumbnail}} alt="...">
+               <div class="caption">
+                 <h3>{{behindRow[0].title}}</h3>
+                 <p>{{behindRow[0].content}}</p>
+                 <div class="col-sm-2 col-centered">
+                 </div>
+               </div>
+             </div>
+           </div>
+       </div>
+
+        <div class="col-sm-2 col-centered">
+            <a class="btn btn-default center-block" role="button" ng-click = "addToBehindCounter()"><span class=" glyphicon glyphicon-chevron-down"></a>
+        </div>
+     </section>
+ </div>

@@ -1,0 +1,217 @@
+<section id="join">
+   <h2>FORM</h2>
+   <hr>
+   <div class="col-sm-8 formContent">
+       <form ng-submit="showFormData()"  class="form-horizontal" id="joinForm">
+
+           <div class="form-group">
+               <label for="name" class="col-sm-4 control-label">First name:</label>
+               <div class="col-sm-8">
+                   <input type="text" class="form-control" id="name" name="name" ng-model="formData.name" placeholder="First name">
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="last_name" class="col-sm-4 control-label">Last name:</label>
+               <div class="col-sm-8">
+                  <input type="text"  class="form-control" id="last_name" name="nazwiko" ng-model="formData.last_name" placeholder="Last name">
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="age" class="col-sm-4 control-label">Age:</label>
+               <div class="col-sm-8">
+                  <input type="number" min="18" max="99" class="form-control" id="age" name="age" ng-model="formData.age" placeholder="99">
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="sex" class="col-sm-4 control-label">Sex: </label>
+               <div class="col-sm-8">
+                   <div class="col-sm-2">
+                      <input type="radio" name='sex' ng-model="formData.sex" value='female' checked class="form-control" id="female">
+                   </div>
+                   <label for="sex" class="col-sm-2 control-label">female</label>
+
+                   <div class="col-sm-2">
+                      <input type="radio" name='sex' ng-model="formData.sex" value='male' class="form-control" id="male">
+                   </div>
+                   <label for="sex" class="col-sm-2 control-label">male</label>
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="address" class="col-sm-4 control-label">Address:</label>
+               <div class="col-sm-8">
+                  <input type="text"  class="form-control" id="address" name="address" ng-model="formData.address" placeholder="address">
+               </div>   
+           </div>
+           <div class="form-group">
+               <label for="state" class="col-sm-4 control-label">State:</label>
+               <div class="col-sm-8">
+                   <select name="state" ng-model="formData.state" id="state" class="form-control">
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Dakota">Dakota </option>
+                        <option value="Delaware">Delaware </option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Floryda">Floryda</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaje">Hawaje</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="California">California</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                   </select>
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="phone" class="col-sm-4 control-label">Phone:</label>
+               <div class="col-sm-8">
+                  <input type="tel"  class="form-control" id="phone" name="phone" ng-model="formData.phone" placeholder="phone">
+               </div>  
+           </div>
+           <div class="form-group">
+               <label for="email" class="col-sm-4 control-label">E-mail:</label>
+               <div class="col-sm-8">
+                  <input type="email"  class="form-control" id="email" name="email" ng-model="formData.email" placeholder="Email">
+                </div>
+           </div>
+           <div class="form-group">
+               <label for="height" class="col-sm-4 control-label">Height:</label>
+               <div class="col-sm-8">
+                  <input type="number" min="150" max="250"  class="form-control" id="height" name="height" ng-model="formData.height" placeholder="height">
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="weight" class="col-sm-4 control-label">Weight:</label>
+              <div class="col-sm-8">
+                  <input type="number" min="30" max="150"  class="form-control" id="weight" name="weight" ng-model="formData.weight" placeholder="weight">
+              </div>
+           </div>
+           <div class="form-group">
+               <label for="hair" class="col-sm-4 control-label">Hair:</label>
+               <div class="col-sm-8">
+                  <input type="text"  class="form-control" id="hair" name="hair" ng-model="formData.hair" placeholder="hair">
+               </div>  
+           </div>
+           <div class="form-group">
+               <label for="eyes" class="col-sm-4 control-label">Eyes:</label>
+               <div class="col-sm-8">
+                  <input type="text"  class="form-control" id="eyes" name="eyes" ng-model="formData.eyes" placeholder="eyes">
+               </div>   
+           </div>
+           <div class="form-group">
+               <label for="size" class="col-sm-4 control-label">Size:</label>
+               <div class="col-sm-8">
+                  <input type="number" min="1" max="99"  class="form-control" id="size" name="size" ng-model="formData.size" placeholder="size">
+               </div>   
+           </div>
+           <div class="form-group">
+               <label for="shoe" class="col-sm-4 control-label">Shoe:</label>
+               <div class="col-sm-8">
+                  <input type="number" min="1" max="99"  class="form-control" id="shoe" name="shoe" ng-model="formData.shoe" placeholder="shoe">
+               </div> 
+           </div>
+           <div class="form-group">
+               <label for="expirience" class="col-sm-4 control-label">Expirience:</label>
+               <div class="col-sm-8">
+                   <select name="expirience" ng-model="formData.expirience" id="expirience" class="form-control">
+                        <option value="brak">none</option>
+                        <option value="małe">low</option>
+                        <option value="średnie">moderate</option>
+                        <option value="duże">high</option>
+                   </select>
+               </div>
+           </div>
+
+           <div class="female">
+               <div class="form-group">
+                   <label for="bust" class="col-sm-4 control-label">Bust:</label>
+                   <div class="col-sm-8">
+                       <input type="number" min="25" max="200" class="form-control" id="bust" name="bust" ng-model="formData.bust" placeholder="90">
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label for="cup" class="col-sm-4 control-label">Cup:</label>
+                       <div class="col-sm-8">
+                           <select name="cup" ng-model="formData.cup" id="cup" class="form-control">
+                               <option value="AA">AA</option>
+                               <option value="A">A</option>
+                               <option value="B">B</option>
+                               <option value="C">C</option>
+                               <option value="D">D</option>
+                               <option value="DD">DD</option>
+                               <option value="E">E</option>
+                               <option value="F">F</option>
+                               <option value="FF">FF</option>
+                               <option value="G">G</option>
+                               <option value="GG">GG</option>
+                               <option value="H">H</option>
+                               <option value="HH">HH</option>
+                               <option value="J">J</option>
+                               <option value="JJ">JJ</option>
+                               <option value="K">K</option>
+                           </select>
+                       </div>
+               </div>
+               <div class="form-group">
+                   <label for="waist" class="col-sm-4 control-label">Waist:</label>
+                   <div class="col-sm-8">
+                      <input type="number" min="25" max="200" class="form-control" id="waist" name="waist" ng-model="formData.waist" placeholder="60">
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label for="hips" class="col-sm-4 control-label">Hips:</label>
+                   <div class="col-sm-8">
+                      <input type="number" min="25" max="200" class="form-control" id="hips" name="hips" ng-model="formData.hips" placeholder="90">
+                   </div>   
+               </div>
+               <div class="form-group">
+                   <label for="legs" class="col-sm-4 control-label">Legs:</label>
+                   <div class="col-sm-8">
+                      <input type="number" min="50" max="200" class="form-control" id="legs" name="legs" ng-model="formData.legs" placeholder="80">
+                   </div>  
+               </div>
+           </div>
+
+           <div class="male">
+               <div class="form-group">
+                   <label for="chest" class="col-sm-4 control-label">Chest:</label>
+                   <div class="col-sm-8">
+                       <input type="number" min="25" max="200" class="form-control" id="chest" name="chest" ng-model="formData.chest" placeholder="90">
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label for="pas" class="col-sm-4 control-label">Waist:</label>
+                   <div class="col-sm-8">
+                       <input type="number" min="25" max="200" class="form-control" id="waist" name="waist" ng-model="formData.waist" placeholder="80">
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label for="legs" class="col-sm-4 control-label">Legs:</label>
+                   <div class="col-sm-8">
+                       <input type="number" min="50" max="200" class="form-control" id="legs" name="legs" ng-model="formData.legs" placeholder="90">
+                   </div>
+               </div>
+           </div>
+           <div class="form-group">
+               <div class="col-sm-offset-8">
+                   <button type="submit" class="btn btn-default col-sm-4">Send</button>
+               </div>
+           </div>         
+       </form>
+   </div>              
+
+   </form>
+   <div id="formDataContainer">
+      <p>Thanks for the form!</p>
+      <p>Following data recieved:</p>
+       <ul id="formDataList"> <li ng-repeat="(key, value) in formData"> {{key}}: {{value}} </li></ul>
+    </div>
+   <div class="col-sm-4">
+           <img src="http://www.fillmurray.com/400/1000" alt="...">
+   </div>
+    <div>
+    </div>
+</section>

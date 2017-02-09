@@ -1,0 +1,115 @@
+<section id="models">
+    <h2>MODELS</h2>
+    <hr>
+    <div class="row" ng-repeat='modelsRow in limitedModelsArray'>
+        <div class="col-sm-3 modelsTile {{modelsRow[0].class}}">
+            <div class="thumbnail">
+                <img ng-src={{modelsRow[0].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{modelsRow[0].title}}</h3>
+                    <p>{{modelsRow[0].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{modelsRow[0].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=modelsRow[0]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{modelsRow[1].class}}">
+            <div class="thumbnail">
+                <img ng-src={{modelsRow[1].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{modelsRow[1].title}}</h3>
+                    <p>{{modelsRow[1].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{modelsRow[1].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=modelsRow[1]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{modelsRow[2].class}}">
+            <div class="thumbnail">
+                <img ng-src={{modelsRow[2].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{modelsRow[2].title}}</h3>
+                    <p>{{modelsRow[2].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{modelsRow[2].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=modelsRow[2]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{modelsRow[3].class}}">
+            <div class="thumbnail">
+                <img ng-src={{modelsRow[3].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{modelsRow[3].title}}</h3>
+                    <p>{{modelsRow[3].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{modelsRow[3].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=modelsRow[3]></pop-up-gallery>
+            
+        </div>
+    </div>
+ <div class="col-sm-2 col-centered">
+   <a class="btn btn-default center-block" role="button" ng-click = "addToModelsCounter()"><span class=" glyphicon glyphicon-chevron-down"></a>
+ </div>
+</section>
+
+<section id="hostess">
+    <h2>HOSTESS</h2>
+    <hr>
+    <div class="row" ng-repeat='hostessesRow in limitedHostessesArray'>
+        <div class="col-sm-3 modelsTile {{hostessesRow[0].class}}">
+            <div class="thumbnail">
+                <img ng-src={{hostessesRow[0].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{hostessesRow[0].title}}</h3>
+                    <p>{{hostessesRow[0].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{hostessesRow[0].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=hostessesRow[0]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{hostessesRow[1].class}}">
+            <div class="thumbnail">
+                <img ng-src={{hostessesRow[1].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{hostessesRow[1].title}}</h3>
+                    <p>{{hostessesRow[1].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{hostessesRow[1].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=hostessesRow[1]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{hostessesRow[2].class}}">
+            <div class="thumbnail">
+                <img ng-src={{hostessesRow[2].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{hostessesRow[2].title}}</h3>
+                    <p>{{hostessesRow[2].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{hostessesRow[2].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=hostessesRow[2]></pop-up-gallery>
+            
+        </div>
+        <div class="col-sm-3 modelsTile {{hostessesRow[3].class}}">
+            <div class="thumbnail">
+                <img ng-src={{hostessesRow[3].thumbnail}} alt="...">
+                <div class="caption">
+                    <h3>{{hostessesRow[3].title}}</h3>
+                    <p>{{hostessesRow[3].resume}}</p>
+                    <a class="btn btn-default center-block" role="button" data-toggle="modal" data-target="#{{hostessesRow[3].popUpID}}">More</a>
+                </div>
+            </div>
+            <pop-up-gallery model=hostessesRow[3]></pop-up-gallery>
+            
+        </div>
+    </div>
+ <div class="col-sm-2 col-centered">
+   <a class="btn btn-default center-block" role="button" ng-click = "addToHostessesCounter()"><span class=" glyphicon glyphicon-chevron-down"></a>
+ </div>
+</section>
